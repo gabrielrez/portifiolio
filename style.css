@@ -151,6 +151,11 @@ a {
   font-weight: 400;
 }
 
+.project-info p {
+  margin-top: 16px;
+  color: var(--c3);
+}
+
 .scroll-up {
   display: flex;
   justify-content: center;
@@ -262,8 +267,14 @@ a {
   }
 }
 
-.animals {
-  background-image: url(img/Captura\ de\ tela\ 2024-01-15\ 180721.png);
+.vineluxe {
+  background-image: url(img/vineluxe.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.eco-pedals {
+  background-image: url(img/Captura\ de\ tela\ 2024-01-16\ 115612.png);
   background-position: center;
   background-size: cover;
 }
