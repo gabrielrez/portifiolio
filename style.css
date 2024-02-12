@@ -176,6 +176,10 @@ a {
   .home-text {
     font-size: 1.25rem;
   }
+
+  .profile-image {
+    max-width: 100px;
+  }
 }
 
 @media(max-width: 400px) {
@@ -183,5 +187,3 @@ a {
     font-size: 1.125rem;
   }
 }
-
-@media(max-width: 300px) {}
