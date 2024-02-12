@@ -1,6 +1,6 @@
 :root {
-  --c1: #212529;
-  --c2: #333333;
+  --c1: #444444;
+  --c2: #555555;
   --c3: #868E96;
 }
 
@@ -12,6 +12,7 @@
 
 body {
   font-family: 'Fira Sans', sans-serif;
+  background-color: #FFFFFF;
 }
 
 img {
@@ -25,7 +26,7 @@ a {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -35,7 +36,7 @@ a {
 }
 
 .profile-image {
-  max-width: 250px;
+  max-width: 200px;
   border-radius: 50%;
   transition: 0.5s ease;
 }
@@ -47,7 +48,7 @@ a {
 
 .home-title {
   margin-top: 40px;
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: var(--c1);
   font-weight: 700;
   line-height: 1.2;
@@ -55,7 +56,7 @@ a {
 
 .home-text {
   margin-top: 20px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--c2);
   font-weight: 400;
   line-height: 1.5;
@@ -67,16 +68,15 @@ a {
   text-decoration: none;
   color: var(--c2);
   padding: 8px 24px;
-  border: 2px solid #212529;
+  border: 2px solid #DADADA;
   border-radius: 4px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
-  transition: 0.3s ease;
+  transition: 0.2s;
 }
 
 .home-btn:hover {
-  background-color: #212529;
-  color: #F5F8FD;
+  border-color: var(--c2);
 }
 
 .about,
@@ -135,44 +135,15 @@ a {
   transform: translateY(-8px);
 }
 
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 20px;
-}
-
-.tags span {
-  background-color: #F5F8FD;
-  padding: 8px 16px;
-  border-radius: 8px;
-}
-
-.right {
-  text-align: right;
-}
-
-.right .tags {
-  justify-content: flex-end;
-}
-
 @media(max-width: 1000px) {
   .container {
     padding: 0 40px;
-  }
-
-  .home-btn {
-    border: 2px solid #212529;
   }
 }
 
 @media(max-width: 800px) {
   .home {
     margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
   }
 }
 
@@ -180,6 +151,10 @@ a {
   .home-title {
     margin-top: 32px;
     font-size: 3rem;
+  }
+
+  .profile-image {
+    max-width: 150px;
   }
 
   .home-text {
@@ -195,20 +170,18 @@ a {
 
 @media(max-width: 500px) {
   .home-title {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .home-text {
     font-size: 1.25rem;
   }
-
-  .profile-image {
-    max-width: 200px;
-  }
 }
 
-@media(max-width: 330px) {
+@media(max-width: 400px) {
   .home-btn {
     font-size: 1.125rem;
   }
 }
+
+@media(max-width: 300px) {}
