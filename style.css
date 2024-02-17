@@ -80,6 +80,16 @@ a {
   border-color: var(--c2);
 }
 
+.social {
+  margin-top: 40px;
+  display: flex;
+  gap: 32px;
+}
+
+.social img {
+  width: 32px;
+}
+
 .about,
 .projects {
   margin-top: 100px;
