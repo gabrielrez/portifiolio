@@ -49,7 +49,9 @@ a {
 .profile-image {
   max-width: 150px;
   border-radius: 50%;
-  animation: imgRotate 1s ease-in-out forwards;
+  animation: imgRotate 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
 }
 
 @keyframes textFadeIn {
@@ -69,7 +71,8 @@ a {
   color: var(--c1);
   font-weight: 700;
   line-height: 1.2;
-  animation: textFadeIn 1.25s ease-in-out forwards;
+  animation: textFadeIn 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation-delay: 0.3s;
 }
 
 .home-text {
@@ -78,7 +81,8 @@ a {
   color: var(--c2);
   font-weight: 400;
   line-height: 1.5;
-  animation: textFadeIn 1.5s ease-in-out forwards;
+  animation: textFadeIn 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation-delay: 0.4s;
 }
 
 .home-btn {
@@ -90,10 +94,11 @@ a {
   line-height: 1.5;
   transition: 0.2s;
   position: relative; 
-  animation: textFadeIn 2s ease-in-out forwards;
+  animation: textFadeIn 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation-delay: 0.6s;
 }
 
-.home-btn::after{
+.home-btn::after {
   content: "";
   display: block;
   width: 100%;
@@ -102,7 +107,7 @@ a {
   transition: 0.2s ease;
 }
 
-.home-btn:hover, .home-btn:hover::after{
+.home-btn:hover, .home-btn:hover::after {
   transform: translateX(16px);
 }
 
@@ -110,7 +115,8 @@ a {
   margin-top: 40px;
   display: flex;
   gap: 32px;
-  animation: textFadeIn 2.5s ease-in-out forwards;
+  animation: textFadeIn 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation-delay: 0.8s;
 }
 
 .social img {
@@ -118,14 +124,15 @@ a {
   transition: 0.2s ease;
 }
 
-.social img:hover{
+.social img:hover {
   transform: translateY(-4px);
 }
 
 .about,
 .projects {
   margin-top: 100px;
-  animation: textFadeIn 3s ease-in-out forwards;
+  animation: textFadeIn 2.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation-delay: 1s;
 }
 
 .section-title {
@@ -165,8 +172,6 @@ a {
 
 .project {
   width: 100%;
-  /* border: 2px solid var(--c3); */
-  /* border-radius: 8px; */
   padding: 24px 0;
   transition: 0.2s;
 }
@@ -210,6 +215,42 @@ a {
 
 .scroll-up-btn:hover {
   opacity: 75%;
+}
+
+.home-title, .home-text, .home-btn, .social, .about, .projects {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@media(max-width: 1000px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media(max-width: 800px) {
+  .home {
+    margin-top: 40px;
+  }
+}
+
+@media(max-width: 700px) {
+  .home-title {
+    margin-top: 32px;
+    font-size: 3rem;
+  }
+
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .profile-image {
+    max-width: 150px;
+  }
+
+  .home-text {
+    font-size: 1.5rem;
+  }
 }
 
 @media(max-width: 1000px) {
